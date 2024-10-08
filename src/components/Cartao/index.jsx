@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Cartao() {
     return(
-        <div className="m-4 rounded border-2 border-solid border-rose-400">
+        <div className="m-4 rounded border-2 border-solid border-rose-400 max-w-[387px]">
             <Image className="bg-cover bg-center" src="/assets/images/ovo_pepino.png" width={387} height={297} alt="Prato de ovo com pepino"/>
             <h2 className="p-2 bg-rose-300 text-gray-800">
                 Ovo com arroz e pepino

@@ -1,11 +1,17 @@
 import Cabecalho from "@/components/Cabecalho";
-import Cartao from "@/components/Cartao";
+import CardList from "@/components/CardList";
+import Rodape from "@/components/Rodape";
+import Contador from "@/components/contador";
+import Form from "@/components/Form";
 
 export default function Home() {
   return (
     <div>
       <Cabecalho />
-      <Cartao />
+      {/* <Contador />
+      <Form /> */}
+      <CardList />
+      <Rodape />
     </div>
   );
 }
