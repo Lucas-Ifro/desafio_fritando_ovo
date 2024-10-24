@@ -1,10 +1,17 @@
 import { Clock, Soup } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
-export default function Cartao({imagem, titulo, tempo, serve}) {
+export default function Cartao({id, imagem, titulo, tempo, serve}) {
     return(
         <div className="m-4 rounded border-2 border-solid border-rose-400 max-w-[387px]">
-            <Image className="bg-cover bg-center" src={`/${imagem}`} width={387} height={297} alt={titulo}/>
+            <Link href={`/receitas/${id}`}>
+            <Image 
+                className="bg-cover bg-center" 
+                src={imagem} 
+                width={387} 
+                height={297} 
+                alt={titulo}/>
             <h2 className="p-2 bg-rose-300 text-gray-800">
                 {titulo}
             </h2>
@@ -16,6 +23,7 @@ export default function Cartao({imagem, titulo, tempo, serve}) {
                 <Soup />
                 serve {serve} pessoa(s)
             </div>
+            </Link>
         </div>
     ) 
 }
